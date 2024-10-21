@@ -16,7 +16,7 @@
 
 ## 下载程序
 
-https://github.com/k8scat/wechat-steps/releases
+https://github.com/k8scat/wechat-steps/releases/latest
 
 ## 运行
 
