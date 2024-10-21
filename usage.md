@@ -14,11 +14,17 @@
 <img src="images/bind_wx1.jpg" height="240px">
 <img src="images/bind_wx2.png" height="240px">
 
-## 下载程序
+## 定时任务
+
+[定时任务使用说明](cron.md)
+
+## 本地运行
+
+### 下载程序
 
 https://github.com/k8scat/wechat-steps/releases/latest
 
-## 运行
+### 执行程序
 
 ```./wechat-steps -zepp-account=账号 -zepp-password=密码 -steps=步数```
 
