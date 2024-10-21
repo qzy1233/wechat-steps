@@ -1,0 +1,27 @@
+name: Daily Cron Job
+
+on:
+  schedule:
+    - cron: '0 2 * * *'  # 每天 UTC 2:00 执行，相当于北京时间 10:00
+
+env:
+  STEPS: 100000
+
+jobs:
+  daily-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.23'
+
+      - name: Set steps
+        run: |
+          go run main.go \
+            -zepp-account=${{ secrets.ZEPP_ACCOUNT }} \
+            -zepp-password=${{ secrets.ZEPP_PASSWORD }} \
+            -steps=${{ env.STEPS }}
