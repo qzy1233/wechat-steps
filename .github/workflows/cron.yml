@@ -6,7 +6,7 @@ on:
     - cron: '0 2 * * *'  # 每天 UTC 2:00 执行，相当于北京时间 10:00
 
 env:
-  STEPS: 100000
+  STEPS: 66666  # 设置步数
 
 jobs:
   daily-job:

@@ -13,7 +13,7 @@
 定时任务的配置文件位于 [.github/workflows/cron.yml](./.github/workflows/cron.yml)。主要配置项包括：
 
 1. 执行时间：通过 `cron` 表达式设置，当前为 `'0 2 * * *'`
-2. 步数设置：通过环境变量 `STEPS` 设置，当前默认值为 100000
+2. 步数设置：通过环境变量 `STEPS` 设置
 
 ## 使用步骤
 
