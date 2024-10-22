@@ -26,7 +26,13 @@ https://github.com/k8scat/wechat-steps/releases/latest
 
 ### 执行程序
 
-```./wechat-steps -zepp-account=账号 -zepp-password=密码 -steps=步数```
+```bash
+# 设置步数
+./wechat-steps -zepp-account=账号 -zepp-password=密码 -steps=步数
+
+# 设置步数范围
+./wechat-steps -zepp-account=账号 -zepp-password=密码 -steps-range=true -steps-min=最小步数 -steps-max=最大步数
+```
 
 ## 注意
 
